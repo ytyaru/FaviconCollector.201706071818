@@ -1,0 +1,69 @@
+@charset "utf-8";
+html, body, div, img, a {
+    margin: 0px;
+    padding: 0px;
+}
+img.base64-icon {
+	overflow: visible;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding: 16px;
+    padding: 16px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+img.base64-icon:hover {
+    width: 64px;
+    height: 64px;
+    padding: 0px;
+    padding: 0px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    cursor: url(../img/half_alpha_mouse_cursor.png), default;
+}
+a:focus img.base64-icon {
+    width: 64px;
+    height: 64px;
+    padding: 0px;
+    padding: 0px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+    cursor: url(../img/half_alpha_mouse_cursor.png), default;
+	outline: 1px #ff0000 dashed;
+}
+
+#Icons {
+	overflow: visible;
+}
+#Icons a:focus {
+	position: relative;
+	outline: none;
+}
+#Icons a:focus:after {
+    opacity: 0.5;
+    content: attr(title);
+	font-weight: normal;
+	border: 1px silver solid;
+	box-shadow: 1px 1px 3px 0 silver;
+	border-radius: 0.5em;
+	background-color: white;
+	color: black;
+	position: absolute;
+	left: 0;
+/*	top: 32px;*/
+	padding: 3px;
+	white-space: nowrap;
+	z-index: 1;
+}
+
